@@ -11,7 +11,7 @@ class Request(models.Model):
     blood_group = models.CharField(choices=Blood_Group_Choices, max_length=3)
     location = models.TextField()
     status = models.CharField(choices=Status, max_length=20)
-    created_at = models.DateField(auto_now_add=True)
+    created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
     def mark_fulfilled(self):
