@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "accounts",
     "requesters",
     "donations",
+    "notifications",
 ]
 
 MIDDLEWARE = [
