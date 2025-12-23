@@ -28,7 +28,7 @@ class AccountView(APIView):
         serializer.save()
         return Response(serializer.data, status=status.HTTP_200_OK)
     
-    def fetch(self, request, *args, **kwargs):
+    def patch(self, request, *args, **kwargs):
         account = self.get_object()
         serializer = AccountSerializer(
             account,
